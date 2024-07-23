@@ -1,10 +1,10 @@
-import React from 'react';
+import Header from "../../components/header/header";
 
 const Articles = () => {
     return (
-        <div>
-
-        </div>
+        <main>
+        <Header page={"articles"}></Header>
+      </main>
     );
 };
 

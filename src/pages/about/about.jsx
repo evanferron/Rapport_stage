@@ -1,11 +1,11 @@
-import React from 'react';
+import Header from "../../components/header/header";
 
 const About = () => {
-    return (
-        <div>
-
-        </div>
-    );
+  return (
+    <main>
+      <Header page={"about"}></Header>
+    </main>
+  );
 };
 
 export default About;

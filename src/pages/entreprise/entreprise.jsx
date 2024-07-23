@@ -1,11 +1,11 @@
-import React from 'react';
+import Header from "../../components/header/header";
 
 const Entreprise = () => {
-    return (
-        <div>
-
-        </div>
-    );
+  return (
+    <main>
+      <Header page={"entreprise"}></Header>
+    </main>
+  );
 };
 
 export default Entreprise;

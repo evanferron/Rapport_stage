@@ -1,0 +1,55 @@
+@import "../../utils/variables.scss";
+
+
+footer{
+    height: 30rem;
+    width: 100vw;
+    background-color: $creme;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+
+    span{
+        align-self: end;
+        width: 35vw;
+        display: flex;
+        justify-content: space-around;
+
+        a{
+            text-decoration: none;
+            color: $charcoal;
+            position: relative;
+            display: inline-block;
+            font-size: 23px;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 3px;
+                background-color: $charcoal;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.2s ease;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+
+    p{
+        align-self: center;
+        color: $indigo;
+        font-family: 'Aleo';
+        font-size: 22px;
+        font-weight: 450;
+    }
+}

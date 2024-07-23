@@ -1,11 +1,11 @@
-import React from 'react';
+import Header from "../../components/header/header";
 
 const Article = () => {
-    return (
-        <div>
-
-        </div>
-    );
+  return (
+    <main>
+      <Header page={"articles"}></Header>
+    </main>
+  );
 };
 
 export default Article;
