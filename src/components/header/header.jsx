@@ -1,10 +1,16 @@
 import "./header.scss"
 import Navbar from "../navbar/navbar";
 
-const Header = () => {
+const Header = ({ page }) => {
     return (
         <section id="header">
-            <Navbar></Navbar>
+            <Navbar page={page}></Navbar>
+            <h1>Bienvenue</h1>
+            <button id="button-down">
+                <h2>Découvrez mon expérience à Eurial</h2>
+                <div></div>
+            </button>
+            <section></section>
         </section>
     );
 };

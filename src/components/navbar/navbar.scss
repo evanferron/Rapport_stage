@@ -12,6 +12,7 @@
         width: 8rem;
         grid-row: 1;
         grid-column: 1;
+        cursor: pointer;
     }
 
     nav {
@@ -91,4 +92,7 @@
     font-weight: 600;
 }
 
-.navbar-link-selected {}
+.navbar-link-selected {
+    text-decoration: underline;
+    font-weight: 700;
+}
