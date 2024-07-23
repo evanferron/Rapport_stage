@@ -1,14 +1,15 @@
 @import "../../utils/variables.scss";
 
 #navbar {
-    height: 7rem;
     display: grid;
+    height: 8rem;
     grid-template-columns: 1fr 1fr;
     padding-inline: 2rem;
     background-color: $creme;
 
     img {
-        width: 7rem;
+        grid-row: 1;
+        width: 8rem;
         grid-row: 1;
         grid-column: 1;
     }
@@ -17,7 +18,7 @@
         grid-row: 1;
         grid-column: 1 / span 2;
         justify-self: center;
-        width: 50vw;
+        width: 45vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -87,7 +88,7 @@
 .navbar-link {
     font-family: "Asap", sans-serif;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar-link-selected {}
