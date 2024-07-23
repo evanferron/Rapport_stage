@@ -1,1 +1,1 @@
-# Rappor_stage_V2
+This is a personal template for initialise react/vite app
