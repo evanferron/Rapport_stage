@@ -1,0 +1,19 @@
+@import "../../utils/variables.scss";
+
+#main-articles-section {
+    background-color: $grey;
+    width: 100vw;
+    height: 110vh; //to change
+    display: grid;
+    grid-template-rows: min-content 7rem;
+
+    #articles-container {
+        height: 200vh;
+        width: 70vw;
+        border: 2px $brown solid;
+        justify-self: center;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        background-color: $grey;
+    }
+}
