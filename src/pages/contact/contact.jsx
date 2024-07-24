@@ -5,6 +5,7 @@ import "./contact.scss"
 import github from "../../assets/github.png"
 import linkedin from "../../assets/linkedin.png"
 import email from "../../assets/email.png"
+import transition from "../../utils/transition";
 
 const Contact = () => {
   const formHandler = (e) => {
@@ -23,7 +24,7 @@ const Contact = () => {
 
   return (
     <main>
-      <Header page={"contact"} title={"Contactez-Moi"} buttonMessage={"Me contacter"} buttonTarget={"main-contact-section"}></Header>
+      <Header page={"contact"} title={"Mon Contact"} buttonMessage={"Contactez-moi"} buttonTarget={"main-contact-section"}></Header>
       <section id="main-contact-section">
         <section id="form-container">
           <div id="left-container">

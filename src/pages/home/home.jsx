@@ -1,6 +1,7 @@
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import Gotop from "../../components/gotop/gotop";
+import transition from "../../utils/transition";
 
 const Home = () => {
   return (
@@ -12,4 +13,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default transition(Home);
