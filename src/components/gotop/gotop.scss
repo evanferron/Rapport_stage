@@ -1,0 +1,50 @@
+@import "../../utils/variables.scss";
+
+.gotop-button {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    background-color: $grey;
+    border: 1.5px $charcoal solid;
+    border-radius: 100%;
+    right: 3rem;
+    bottom: -10rem;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+#show-button-go-top {
+    // animation: buttonGoTop 1s;
+    transform: translateY(-13rem);
+    transition: transform 0.6s;
+}
+
+#hide-button-go-top {
+    // animation: reverse buttonGoTop 1s;
+    transform: translateY(0rem);
+    transition: transform 0.6s;
+}
+
+
+
+// @keyframes buttonGoTop {
+//     0% {
+//         transform: translateY(0rem);
+//     }
+
+//     100% {
+//         transform: translateY(-13rem);
+//     }
+
+// }

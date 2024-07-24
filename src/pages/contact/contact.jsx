@@ -1,5 +1,6 @@
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
+import Gotop from "../../components/gotop/gotop";
 import "./contact.scss"
 import github from "../../assets/github.png"
 import linkedin from "../../assets/linkedin.png"
@@ -22,7 +23,7 @@ const Contact = () => {
 
   return (
     <main>
-      <Header page={"contact"}></Header>
+      <Header page={"contact"} title={"Contactez-Moi"} buttonMessage={"Me contacter"} buttonTarget={"main-contact-section"}></Header>
       <section id="main-contact-section">
         <section id="form-container">
           <div id="left-container">
@@ -38,7 +39,7 @@ const Contact = () => {
             <p id="temp-message-hide">Email copié dans le presse papier</p>
           </div>
           <div id="right-container">
-            <form action={(e) => formHandler(e)}>
+            <form>
               <fieldset>
                 <legend>Formulaire de Contact</legend>
                 <div className="input-container">
@@ -53,13 +54,14 @@ const Contact = () => {
                   <label htmlFor="message-input">Message :</label>
                   <textarea name="message" id="message-input" placeholder="Bonjour, ..."></textarea>
                 </div>
-                <button>Envoyer</button>
+                <button onClick={(e) => formHandler(e)}>Envoyer</button>
               </fieldset>
             </form>
           </div>
         </section>
         <section id="wave-main-bottom"></section>
       </section>
+      <Gotop></Gotop>
       <Footer></Footer>
     </main>
   );
