@@ -14,36 +14,32 @@ const Navbar = ({ page }) => {
       <nav>
         <ul>
           <li
-            className={`navbar-link ${
-              page == "home" ? " navbar-link-selected" : ""
-            }`}
+            className={`navbar-link ${page == "home" ? " navbar-link-selected" : ""
+              }`}
           >
             <a href="/">ACCUEIL</a>
           </li>
           <li
-            className={`navbar-link ${
-              page == "entreprise" ? " navbar-link-selected" : ""
-            }`}
+            className={`navbar-link ${page == "entreprise" ? " navbar-link-selected" : ""
+              }`}
           >
             <a href="/entreprise">L'ENTREPRISE</a>
           </li>
           <li
-            className={`navbar-link ${
-              page == "articles" ? " navbar-link-selected" : ""
-            }`}
+            className={`navbar-link ${page == "articles" ? " navbar-link-selected" : ""
+              }`}
           >
             <a href="articles">ARTICLES</a>
           </li>
           <li
-            className={`navbar-link ${
-              page == "about" ? " navbar-link-selected" : ""
-            }`}
+            className={`navbar-link ${page == "about" ? " navbar-link-selected" : ""
+              }`}
           >
             <a href="/about">A PROPOS</a>
           </li>
         </ul>
       </nav>
-      <button>CONTACT</button>
+      <button onClick={() => { window.location.href = "/contact" }} id={`${page == 'contact' ? 'on-contact-page' : 'not-on-contact-page'}`} >CONTACT</button>
     </header>
   );
 };

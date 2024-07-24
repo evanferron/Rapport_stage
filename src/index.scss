@@ -17,18 +17,30 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     width: 10px;
     height: 90vh;
   }
-  &::-webkit-scrollbar-thumb{
+
+  &::-webkit-scrollbar-thumb {
     background-color: $charcoal;
   }
+
   &::-webkit-scrollbar-track {
     display: none;
   }
+
 }
 
-main{
-  width: 100vw;
+::selection {
+  color: $grey;
+  background-color: $indigo;
+}
+
+#wave-main-bottom {
+  background-image: url("./wave_bottom.svg");
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
