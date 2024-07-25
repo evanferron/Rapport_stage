@@ -5,7 +5,7 @@
     width: 100vw;
     height: 110vh; //to change
     display: grid;
-    grid-template-rows: min-content 7rem;
+    grid-template-rows: 1fr 7rem;
 
     #articles-container {
         height: 200vh;

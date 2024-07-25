@@ -29,10 +29,10 @@ const Contact = () => {
         <section id="form-container">
           <div id="left-container">
             <img src={github} alt="link to my github" onClick={() => {
-              window.location.href = "https://github.com/evanferron"
+              window.open("https://github.com/evanferron", "_blank").focus()
             }} />
             <img src={linkedin} alt="link to my linkedin" onClick={() => {
-              window.location.href = "https://www.linkedin.com/in/evan-ferron-2b6a9a254"
+              window.open("https://www.linkedin.com/in/evan-ferron-2b6a9a254", "_blank").focus()
             }} />
             <img src={email} alt="copy email to clipboard" onClick={() => {
               copyToClipBoard("evan.ferron53@gmail.com")
