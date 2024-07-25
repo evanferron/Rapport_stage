@@ -1,5 +1,6 @@
 import "./navbar.scss";
 import logo from "../../assets/logo_ef.png";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ page }) => {
   return (
@@ -17,29 +18,30 @@ const Navbar = ({ page }) => {
             className={`navbar-link ${page == "home" ? " navbar-link-selected" : ""
               }`}
           >
-            <a href="/">ACCUEIL</a>
+            <Link to="/">ACCUEIL</Link>
           </li>
           <li
             className={`navbar-link ${page == "entreprise" ? " navbar-link-selected" : ""
               }`}
           >
-            <a href="/entreprise">L'ENTREPRISE</a>
+            <Link to="/entreprise">L'ENTREPRISE</Link>
           </li>
           <li
             className={`navbar-link ${page == "articles" ? " navbar-link-selected" : ""
               }`}
           >
-            <a href="articles">ARTICLES</a>
+            <Link to="/articles">ARTICLES</Link>
           </li>
           <li
             className={`navbar-link ${page == "about" ? " navbar-link-selected" : ""
               }`}
           >
-            <a href="/about">A PROPOS</a>
+            <Link to="/about">A PROPOS</Link>
           </li>
         </ul>
       </nav>
-      <button onClick={() => { window.location.href = "/contact" }} id={`${page == 'contact' ? 'on-contact-page' : 'not-on-contact-page'}`} >CONTACT</button>
+      <Link to="/contact" className="button" id={`${page == 'contact' ? 'on-contact-page' : 'not-on-contact-page'}`} >CONTACT</Link>
+      {/* <button onClick={() => { window.location.href = "/contact" }} id={`${page == 'contact' ? 'on-contact-page' : 'not-on-contact-page'}`} >CONTACT</button> */}
     </header>
   );
 };
