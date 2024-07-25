@@ -1,0 +1,35 @@
+Contexte :
+
+	Sharepoint propose un system de stockage partagé avec toute personne ayant accès à ce Sharepoint. 
+Ce system de partage possède la fonctionnalité de stockage des versions précédentes. Si cette option est désactivée,
+un fichier n'est stocké que dans son état actuel. Si cette option est activée, elle offre la possibilité de stocké un nombre de versions définissable par l'administrateur ;
+l'inconvénient est que ce nombre ne peut pas être défini en dessous de 100.
+
+Problème :
+
+	Si on décide d'activer cette option pour une meilleure sécurité et sauvegarde des données, l'espace disponible seras très vite réduis.
+		Exemple : fichier.pptx de 100Mb de 100 versions prend une place de 10 G
+
+Solution :
+
+	Créer un algorithme qui analyse et nettoye de façon régulière l'ensemble des fichiers stockés sur le Sharepoint.
+Avec pour objectif de ne stocker que les 10 versions précédentes de chaque fichier. 
+Solution créée à l'aide de Power Automate.
+
+Algorithme vulgarisé :
+	
+	-> Récupération de tout les sites du sharepoint commençant par EUR-
+	°  Pour chaque site Sharepoint :
+		-> Récupération des bibliothèques et des listes
+		°  Pour chaque bibliothèques :
+			-> Récupération des info-fichiers de la bibliothèque
+			°  Pour chaque fichier :
+				-> Récupération des info-versions du fichier
+				°  Tant que le nombre de versions est supérieur à 10 :
+					-> Suppression de la version la plus ancienne
+		° Pour chaque listes :
+			-> Récupération des éléments de la liste
+			°  Pour chaque élément :
+				-> Récupération des info versions de l'élément
+				°  Tant que le nombre de versions est supérieur à 10 :
+					-> Suppression de la version la plus ancienne

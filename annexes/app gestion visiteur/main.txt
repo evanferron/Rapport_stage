@@ -1,0 +1,12 @@
+Objectif : 
+
+Faciliter la gestion des visiteurs au sein d'eurial avec une application qui permettrai de virtualiser tout les visiteurs.
+
+
+Fonctionnalité/Fonctionnement :
+
+Créer un visiteur dans une liste sharepoint à l'aide d'une application power app.
+Envoie d'un message teams à la personne qui est sensé recevoir le visiteur.
+Création d'un profile de badge pour ce visiteur à l'aide des informations renseigné dans le formulaire.
+
+
