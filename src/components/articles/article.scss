@@ -1,0 +1,14 @@
+@import "../../utils/variables.scss";
+
+#article-blog {
+    width: 70vw;
+    max-width: 55rem;
+    // height: fit-content;
+    height: 200vh;
+    border: 2px solid $indigo;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    justify-self: center;
+    border-radius: 12px;
+    margin-top: 2rem;
+}

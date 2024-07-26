@@ -2,7 +2,7 @@ import "./listArticles.scss"
 import arrow from "./arrow-left.svg"
 import { useState, useEffect } from "react";
 
-const ListArticles = () => {
+const ListArticles = ({ setArticleId, articleId }) => {
     const [isExpanded, setIsExpanded] = useState(false)
     const [isFixed, setIsFixed] = useState(false)
     const [isBottom, setIsBottom] = useState(false)
@@ -30,6 +30,12 @@ const ListArticles = () => {
         return top >= 0 && bottom <= innerHeight;
     }
 
+    const changeArticleHandler = (id) => {
+        setArticleId(id)
+        document.getElementById("articles-container").scrollIntoView()
+        setIsExpanded(false)
+    }
+
     useEffect(() => {
         window.addEventListener("scroll", scrollHandler);
         return () =>
@@ -39,32 +45,32 @@ const ListArticles = () => {
     return (
         <section className={`main-list-articles ${isFixed ? "menu-articles-fixed" : `menu-articles-unfixed ${isBottom ? "menu-articles-bottom" : "menu-articles-top"}`}`} id={isExpanded ? "menu-expanded" : "menu-not-expanded"}>
             <ul>
-                <li>
-                    <span id="is-selected">
+                <li onClick={() => changeArticleHandler(0)}>
+                    <span id={`${articleId == 0 ? "is-selected" : null}`} >
                         <p>1</p>
                     </span>
                     <p className='title-article'>Mon arrivé dans l'entreprise</p>
                 </li>
-                <li>
-                    <span>
+                <li onClick={() => changeArticleHandler(1)}>
+                    <span id={`${articleId == 1 ? "is-selected" : null}`} >
                         <p>2</p>
                     </span>
                     <p className='title-article'>Découverte des Technos</p>
                 </li>
-                <li>
-                    <span>
+                <li onClick={() => changeArticleHandler(2)}>
+                    <span id={`${articleId == 2 ? "is-selected" : null}`} >
                         <p>3</p>
                     </span>
                     <p className='title-article'>Mon premier Projet</p>
                 </li>
-                <li>
-                    <span>
+                <li onClick={() => changeArticleHandler(3)}>
+                    <span id={`${articleId == 3 ? "is-selected" : null}`} >
                         <p>4</p>
                     </span>
                     <p className='title-article'>Les modifications</p>
                 </li>
-                <li>
-                    <span>
+                <li onClick={() => changeArticleHandler(4)}>
+                    <span id={`${articleId == 4 ? "is-selected" : null}`} >
                         <p>5</p>
                     </span>
                     <p className='title-article'>Bilan</p>
