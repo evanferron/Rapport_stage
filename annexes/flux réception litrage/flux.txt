@@ -1,0 +1,27 @@
+Context :
+
+    Eurial s'occupe de la transformation du lait mais également de la récupération et du transport de celui-ci.
+Pour avoir un suivis sur le stockage de lait il est nécessaire de récupérer les comptes rendu de livraison de stransport aux usines de fabrications.
+C'est pour cela qu'un flux(un programme) a été développé afin de récupérer ces comptes rendus et de les stocker dans un serveur de stockage.
+Il existe cependant un problème : il peut arriver que le serveur de stockage en question coupe la communication avec le flux pendant que celui-ci est en train de transférer des comptes rendus.
+Pour palier à ce problème, les développeurs du flux ont décidé de s'envoyer un mail dans lequel il aurait l'information qu'un des rendus n'as pas été transféré.
+
+Problème :
+
+    Le problème de cette solution était que les informations renseignés dans le mail était insuffisante pour régler le problème à la main:
+Il manquait le rendu, le lien direct de l'exécution du flux et quelques autres informations complémentaires.
+Egalement, le status de l'exécution du flux ne changeais pas si celui-ci ne se déroulais pas bien.
+
+Solution :
+
+    Ma mission était donc d'arriver à renseigner les informations manquantes et de changer le status d'exécution du flux losrqu'il est en erreur.
+
+Algorithme vulgarisé:
+
+    déclencheur du flux : à l'arrivé du courrier dans une boîte aux lettres partagée
+        °  Pour chaque piece jointe du mail :
+            -> Déterminer à quelle société est destiné la pièce jointe.
+            -> Création du fichier compte rendu(pièce jointe) dans le dossier de la société déterminé.
+            ?  Si la création du fichier échoue :
+                -> Envoie du mail avec les informations nécessaires
+                -> Changement du status du flux

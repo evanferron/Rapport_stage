@@ -1,0 +1,5 @@
+Modification :
+
+- Rajout d'un champ optionel pour lier une ou plusieurs pièces jointes dans le formulaire
+	-> insérer les pièces jointes dans le dossier sharepoint
+	-> mettre le lien des pièces jointes dans le mail

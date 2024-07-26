@@ -1,0 +1,19 @@
+APP:
+
+rajout d'un champ dans le formulaire pour ajouter des pièces jointes
+
+FLUX:
+
+nouvelle variable => chemin des pièces jointes | tableau 
+(cette variable est destiné à stocker les chemins des pièces jointes sur le site du Labo concerné)
+
+----
+
+Récupération des pièces jointes passées dans le formulaire.
+°Boucle sur ce résultat :
+	-> Récupération du contenu de la pièce jointe à l'aide du chemin d'accès
+	-> Création du de la pièce jointe dans le site ASCO
+	-> Copie de ce fichier vers le site du Labo concerné
+	-> Ajout du chemin du fichier copier dans le Labo dans la variable 'chemin des pièces jointes'
+
+Dans le mail, rajout des chemins de toute les pièces jointes à partir de la variable 'chemin des pièces jointes'

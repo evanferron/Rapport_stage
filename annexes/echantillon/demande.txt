@@ -1,0 +1,6 @@
+Demande :
+
+    - Possibilité d'ajouter des pièces jointes lors du formulaire de demande d'échantillon.
+    - Faire en sorte d'ajouter ces pièces jointes dans le dossier de la demande.
+    - Faire en sorte de recevoir les emails de formulaire compléter dans l'adresse pro du responsable qui à fait la demande.
+    - Ajouter certaines informations utile dans le corp des mails (nom de la responsable, date de livraison, nombre de pièces jointes, lien vers le dossier contenant tous les documents)
