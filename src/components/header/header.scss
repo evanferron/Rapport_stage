@@ -83,12 +83,8 @@
         }
     }
 
-    section {
-        background-image: url("./wave_header.svg");
-        background-position: center;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        background-size: cover;
+    #wave-header {
+        width: 100vw;
     }
 }
 

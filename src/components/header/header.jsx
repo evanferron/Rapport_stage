@@ -1,6 +1,6 @@
 import "./header.scss";
 import Navbar from "../navbar/navbar";
-
+import wave from "./wave_header.svg"
 const Header = ({ page, title, buttonMessage, buttonTarget }) => {
   return (
     <section id="header">
@@ -12,7 +12,7 @@ const Header = ({ page, title, buttonMessage, buttonTarget }) => {
         <h2>{buttonMessage}</h2>
         <div></div>
       </button>
-      <section></section>
+      <img id="wave-header" src={wave}></img>
     </section>
   );
 };

@@ -1,6 +1,6 @@
 @import "../../utils/variables.scss";
 
-#main-list-articles {
+.main-list-articles {
     height: 80vh;
     width: 27rem;
     background-image: url("./menu.svg");
@@ -22,9 +22,11 @@
 
         li {
             display: flex;
-            justify-content: space-evenly;
+            gap: 3rem;
             border-radius: 22px;
             margin-left: 0.6rem;
+            background-color: $indigo;
+            color: $grey;
 
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -36,16 +38,21 @@
                 width: 2.5rem;
                 height: 2.5rem;
                 border-radius: 100px;
-                background-color: $grey;
                 align-self: center;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                margin-left: 1rem;
 
                 p {
                     margin: 0;
                 }
+            }
+
+            #is-selected {
+                background-color: $grey;
+                color: $indigo;
             }
 
             p {
@@ -59,13 +66,26 @@
         width: 3rem;
         height: 3rem;
         border: none;
-        margin-left: 1rem;
         border-radius: 100px;
         cursor: pointer;
         align-self: center;
+        justify-self: center;
+        margin-right: 3rem;
         display: flex;
         justify-content: center;
         background-color: transparent;
+
+        img {
+            width: 80%;
+            height: 80%;
+            user-select: none;
+            align-self: center;
+        }
+    }
+
+    #to-left {
+        rotate: 0deg;
+        transition: transform 1s, rotate 1s;
 
         &:focus {
             outline: none;
@@ -75,41 +95,61 @@
         &:hover {
             animation: arrow-left-right 1s linear infinite;
         }
-
-        img {
-            width: 80%;
-            height: 80%;
-            user-select: none;
-        }
     }
 
-    #to-left {
-        transform: rotate(-90deg);
+    #to-right {
+        rotate: 180deg;
+        transition: transform 1s, rotate 1s;
 
-        &:active {
-            animation: slide-liste-articles 1s;
+        &:focus {
+            rotate: 180deg;
+            outline: none;
+            animation: arrow-left-right 1s linear infinite;
+        }
+
+        &:hover {
+            rotate: 180deg;
+            animation: arrow-left-right 1s linear infinite;
         }
     }
 }
+
+#menu-expanded {
+    transition: transform 1.5s, position 1s;
+}
+
+#menu-not-expanded {
+    transform: translateX(-19rem);
+    transition: transform 1.5s, position 1s;
+}
+
+.menu-articles-fixed {
+    position: fixed;
+    left: 0;
+    top: 10%;
+}
+
+.menu-articles-unfixed {
+    position: relative;
+}
+
+.menu-articles-bottom {
+    align-self: end;
+}
+
+.menu-articles-top {
+    align-self: start;
+}
+
 
 @keyframes arrow-left-right {
 
     0%,
     100% {
-        transform: translateX(0px) rotate(-90deg);
+        transform: translateX(0px);
     }
 
     50% {
-        transform: translateX(6px) rotate(-90deg);
-    }
-}
-
-@keyframes slide-liste-articles {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-18rem);
+        transform: translateX(6px);
     }
 }

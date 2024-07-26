@@ -5,6 +5,7 @@ import "./contact.scss"
 import github from "../../assets/github.png"
 import linkedin from "../../assets/linkedin.png"
 import email from "../../assets/email.png"
+import wave from "../../wave_bottom.svg"
 import transition from "../../utils/transition";
 
 const Contact = () => {
@@ -60,7 +61,7 @@ const Contact = () => {
             </form>
           </div>
         </section>
-        <section id="wave-main-bottom"></section>
+        <img id="wave-main-bottom" src={wave}></img>
       </section>
       <Gotop></Gotop>
       <Footer></Footer>
