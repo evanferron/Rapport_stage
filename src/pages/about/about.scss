@@ -1,0 +1,92 @@
+@import "../../utils/variables.scss";
+
+#main-about-section {
+    background-color: $grey;
+    width: 100vw;
+    height: min-content; //to change
+    display: grid;
+    grid-template-rows: 30rem 1fr 7rem 7rem;
+
+    #wave-main-bottom{
+        grid-row: 4;
+    }
+
+    #header-about{
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #profile-picture{
+            width: 20rem;
+            aspect-ratio: 1/1;
+            border-radius: 12px;
+            border: 2px solid $indigo;
+        }
+
+        div{
+            width: 20rem;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 1rem;
+            align-items: center;
+            img {
+                width: 4.5rem;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateY(3px);
+                }
+
+                &:active {
+                    transform: translateY(6px);
+                }
+
+            }
+
+        }
+        span{
+            height: 2rem;
+            text-align: center;
+            #temp-message-hide {
+                display: none;
+            }
+    
+            #temp-message {
+                animation: tempMessage 2s;
+                font-family: 'Asap';
+            }
+        }
+    }
+
+    #content-about{
+        width: 60vw;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+
+        section{
+            width: 30vw;
+        }
+
+        .content-about-left{
+            align-self: start;
+        }
+
+        .content-about-right{
+            align-self: end;
+        }
+    }
+}
+
+@keyframes tempMessage {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    0% {
+        opacity: 100;
+        visibility: visible;
+    }
+}
