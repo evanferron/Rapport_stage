@@ -1,0 +1,68 @@
+@import "../../utils/variables.scss";
+
+#main-entreprise-section{
+    background-color: $grey;
+    width: 100vw;
+    height: min-content; //to change
+    display: grid;
+    grid-template-rows: 7rem 1fr 7rem;
+    justify-items: center;
+
+    #wave-main-bottom{
+        grid-row: 4;
+    }
+    span{
+        align-self: flex-end;
+        max-width: 50rem;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+
+        button{
+            display: flex;
+            width: 25%;
+            justify-content: center;
+            gap: 0.5rem;
+            border-top-left-radius: 27px;
+            border-top-right-radius: 27px;
+            border-bottom: none;
+            // outline: none;
+            font-family: 'Asap';
+            font-size: 20px;
+            cursor: pointer;
+            border-image: none;            
+        }
+        .selected{
+            border: solid $brown 2px;
+            border-bottom: none;
+            color: $indigo;
+            background-color: $grey;
+        }
+        .unselected{
+            border: none;
+            background-color: $charcoal;
+            color: $grey;
+
+            .question-mark{
+                color: $brown;
+            }
+        }
+    }
+    #tab-content{
+        max-width: 50rem;
+        width: 60vw;
+        height: 60vh;
+        border-right: 2px $brown solid;
+        box-sizing: border-box;
+        border-left: 2px $brown solid;
+        border-bottom: 2px $brown solid;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        font-family: 'Asap';
+        h2{
+            text-align: center;
+            font-weight: 400;
+        }
+
+    }
+}
