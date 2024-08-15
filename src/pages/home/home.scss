@@ -1,0 +1,13 @@
+@import "../../utils/variables.scss";
+
+#main-home-section{
+    background-color: $grey;
+    width: 100vw;
+    height: 110vh; //to change
+    display: grid;
+    grid-template-rows: 7rem 1fr 3rem 7rem;
+
+    #wave-main-bottom{
+        grid-row: 4;
+    }
+}
