@@ -4,6 +4,8 @@ import Gotop from "../../components/gotop/gotop";
 import ListArticles from "../../components/listArticles/listArticles";
 import wave from "../../wave_bottom.svg";
 import Article1 from "../../components/articles/1article/article";
+import Article2 from "../../components/articles/2article/article";
+import Article3 from "../../components/articles/3article/article";
 import { useState } from "react";
 import "./articles.scss";
 
@@ -11,8 +13,8 @@ const Articles = () => {
   const [articleId, setArticleId] = useState(0);
   const articlesComponent = [
     <Article1 />,
-    <Article1 />,
-    <Article1 />,
+    <Article2 />,
+    <Article3 />,
     <Article1 />,
     <Article1 />,
   ];

@@ -72,28 +72,27 @@ const About = () => {
           <section className="content-about-left">
             <h2>1. Qui je suis ?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,
-              nemo maxime officia vel rem nostrum. Quae, suscipit quibusdam.
-              Amet saepe pariatur totam sed temporibus atque similique
-              accusantium nostrum eum facilis?
+              Je m'appelle Evan Ferron et j'ai 20 ans et je suis passionné
+              d'informatique depuis maintenant quelques années.
             </p>
           </section>
           <section className="content-about-right">
             <h2>2. Quel est mon parcour ?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,
-              nemo maxime officia vel rem nostrum. Quae, suscipit quibusdam.
-              Amet saepe pariatur totam sed temporibus atque similique
-              accusantium nostrum eum facilis?
+              J'ai obtenue mon baccalauréat avec mention au lycée saint-michel à
+              Chateau-Gontier. Je suis actuellement sur ma troisième années en
+              étude d'informatique (développement) à Ynov Nantes.
             </p>
           </section>
           <section className="content-about-left">
             <h2>3. Pourquoi ce site ?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,
-              nemo maxime officia vel rem nostrum. Quae, suscipit quibusdam.
-              Amet saepe pariatur totam sed temporibus atque similique
-              accusantium nostrum eum facilis?
+              Ce site sert de rapport de stage, me permettant de présenter de
+              manière claire et structurée l'expérience que j'ai acquise au
+              cours de cette période. Il met en avant les compétences que j'ai
+              développées et les projets sur lesquels j'ai travaillé, tout en
+              illustrant les apprentissages et les défis relevés durant mon
+              stage.
             </p>
           </section>
           <section className="content-about-right">

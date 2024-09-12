@@ -59,9 +59,23 @@
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
         font-family: 'Asap';
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
         h2{
             text-align: center;
             font-weight: 400;
+        }
+        img{
+            align-self: center;
+        }
+
+        #map-eurial{
+            width: 60%;
+        }
+
+        #histoire-eurial{
+            width: 60%;
         }
 
     }
