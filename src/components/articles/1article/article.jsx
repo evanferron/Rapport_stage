@@ -25,6 +25,7 @@ const Article1 = () => {
       <p>J'ai également pus participer à certaines réunion d'équipe.</p>
       <section>
         <span>Le 22/06/2024</span>
+        <span>1/5</span>
       </section>
     </article>
   );

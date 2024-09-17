@@ -73,15 +73,16 @@ const About = () => {
             <h2>1. Qui je suis ?</h2>
             <p>
               Je m'appelle Evan Ferron et j'ai 20 ans et je suis passionné
-              d'informatique depuis maintenant quelques années.
+              d'informatique depuis maintenant quelques années. En dehors des
+              études j'aime le sport, les jeux-vidéos et les voyages.
             </p>
           </section>
           <section className="content-about-right">
-            <h2>2. Quel est mon parcour ?</h2>
+            <h2>2. Quel est mon parcours ?</h2>
             <p>
               J'ai obtenue mon baccalauréat avec mention au lycée saint-michel à
-              Chateau-Gontier. Je suis actuellement sur ma troisième années en
-              étude d'informatique (développement) à Ynov Nantes.
+              Chateau-Gontier(53). Je suis actuellement sur ma troisième années
+              en étude d'informatique (développement) à Ynov Nantes.
             </p>
           </section>
           <section className="content-about-left">
@@ -96,7 +97,7 @@ const About = () => {
             </p>
           </section>
           <section className="content-about-right">
-            <h2>4. Titre 4</h2>
+            <h2>4. Mes projets</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,
               nemo maxime officia vel rem nostrum. Quae, suscipit quibusdam.

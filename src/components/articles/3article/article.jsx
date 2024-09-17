@@ -7,6 +7,7 @@ import WhileLoop from "./boucle_while.png";
 import FileCondition from "./condition_fichier.png";
 import DeleteReport from "./rapport_suppression.png";
 import GetRequestVersion from "./requete_recup_version.png";
+import FluxSuppression from "./flux_suppression.png";
 
 const Article3 = () => {
   return (
@@ -18,8 +19,8 @@ const Article3 = () => {
         id="logo-powerautomate"
       />
       <p>
-        J'ai travailler sur ce projet pendant une grande partie du stage, ...
-        J'ai essentiellement manipuler Power automate dans cette mission.
+        J'ai travailler sur ce projet pendant une grande partie du stage et j'ai
+        essentiellement manipuler Power automate dans cette mission.
       </p>
       <p>
         Context : Sharepoint propose un system de stockage partagé avec toute
@@ -42,9 +43,26 @@ const Article3 = () => {
         ne stocker que les 10 versions précédentes de chaque fichier. Solution
         créée à l'aide de Power Automate.
       </p>
-      
+
+      <p>Ci-dessous des screen du flux :</p>
+      <img src={FluxSuppression} alt="" className="img-flux-suppression" />
+      <img src={LibraryLoop} alt="" className="img-flux-suppression" />
+      <img src={WhileLoop} alt="" className="img-flux-suppression" />
+      <img src={DeleteReport} alt="" className="img-flux-suppression" />
+
+      <p>
+        Ce projet m'a permi d'aborder de nombreuse fonctionnalités avancées de
+        Power Automate :{" "}
+      </p>
+      <ul>
+        <li>Parcours de sites sharepoint</li>
+        <li>Analyse de donnée</li>
+        <li>Création/Suppression de fichier</li>
+      </ul>
+      <p>TO DO : Conclusion</p>
       <section>
-        <span>Le 22/06/2024</span>
+        <span>Le 19/07/2024</span>
+        <span>3/5</span>
       </section>
     </article>
   );

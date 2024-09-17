@@ -4,6 +4,7 @@ import wave from "../../wave_bottom.svg";
 import EurialLogo from "./Eurial_logo.png";
 import MapEurial from "./map_eurial.png";
 import HistoireEurial from "./histoire_eurial.png";
+import Siege from "./siege.jpg";
 
 const EntrepriseContent = () => {
   const [currentTab, setCurrentTab] = useState(1);
@@ -16,7 +17,8 @@ const EntrepriseContent = () => {
         Branche lait du groupe coopératif AGRIAL, EURIAL collecte des laits
         d’élevages conventionnels et bio en vache et en chèvre. Ceux-ci sont
         transformés en produits laitiers et en ingrédients de spécialité, puis
-        commercialisés auprès des GMS, de la RHD et des industriels.
+        commercialisés auprès des GMS(Grandes et Moyennes Surfaces), de la
+        RHD(Restauration Hors Domicile) et des industriels.
       </p>
       <p>
         Forte de ses valeurs coopératives, de ses principes éthiques et de sa
@@ -61,10 +63,13 @@ const EntrepriseContent = () => {
     <section id="tab-content">
       <h2>Comment est l'environnement de travail ?</h2>
       <p>
-        J'ai effectuer mon stage au siège d'Eurial dans la partie du batiment
-        qui regroupais les différents métier axés informatique.
-        Cette partie est un grand open space, 
+        J'ai effectué mon stage au siège d'Eurial : un batiment est relativement
+        neuf et donc assez confortable. Au sein du batiment, le lieu de travail
+        des différents corps informatiques est un grand open space pouvant
+        accueillir environ 60 employés. L'open space contient également de
+        multiple salles de réunions.
       </p>
+      <img src={Siege} alt="" id="siege-img" />
     </section>
   );
 

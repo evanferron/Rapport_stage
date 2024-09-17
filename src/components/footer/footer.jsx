@@ -8,7 +8,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/evan-ferron-2b6a9a254">LINKEDIN</a>
         <a href="https://github.com/evanferron">GITHUB</a>
       </span>
-      <p>Fait par Evan Ferron</p>
+      <p>Créé par Evan Ferron</p>
     </footer>
   );
 };

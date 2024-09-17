@@ -3,7 +3,7 @@ import arrow from "./arrow-left.svg";
 import { useState, useEffect } from "react";
 
 const ListArticles = ({ setArticleId, articleId }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const [isFixed, setIsFixed] = useState(false);
   const [isBottom, setIsBottom] = useState(false);
 
@@ -65,7 +65,7 @@ const ListArticles = ({ setArticleId, articleId }) => {
           <span id={`${articleId == 0 ? "is-selected" : null}`}>
             <p>1</p>
           </span>
-          <p className="title-article">Mon arrivé dans l'entreprise</p>
+          <p className="title-article">Mon arrivée dans l'entreprise</p>
         </li>
         <li onClick={() => changeArticleHandler(1)}>
           <span id={`${articleId == 1 ? "is-selected" : null}`}>
