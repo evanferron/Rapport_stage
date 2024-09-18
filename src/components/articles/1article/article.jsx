@@ -2,6 +2,7 @@ import React from "react";
 import "../article.scss";
 import "./article.scss";
 import LogoEurial from "../../../assets/Eurial_logo.png";
+import Organnigrame from "./organnigrame.png";
 
 const Article1 = () => {
   return (
@@ -13,7 +14,7 @@ const Article1 = () => {
         permis de rencontrer l'équipe que j'allais intégrer pendant ces 6
         semaines de stage.
       </p>
-      <p>TO DO : Organigramme</p>
+      <img src={Organnigrame} alt="" id="organnigrame"/>
       <p>
         Après avoir rencontrer l'équipe je me suis familiarisé avec le lieu de
         travail:
