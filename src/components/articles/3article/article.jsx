@@ -58,6 +58,10 @@ const Article3 = () => {
         <li>Analyse de donnée</li>
         <li>Création/Suppression de fichier</li>
       </ul>
+      <p>
+        J'ai travaillé sur ce projet une très grande partie de mon stage en
+        parallèle avec d'autres missions.
+      </p>
       <section>
         <span>Le 19/07/2024</span>
         <span>3/5</span>

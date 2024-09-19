@@ -12,8 +12,9 @@ const Article2 = () => {
     <article id="article-2" className="article-blog">
       <h2>2. Découverte des technologies</h2>
       <p>
-        Les premiers jours de stages mon permi de découvrir les technologies que
-        j'allais pouvoir manipuler : Power APP et Power Automate.
+        J'ai consacré les premiers jours de mon stage à découvrir les
+        technologies que j'allais pouvoir manipuler : Power APP et Power
+        Automate.
       </p>
       <div id="logo-container">
         <img src={LogoPowerApp} alt="logo eurial" id="logo-eurial" />
@@ -22,7 +23,7 @@ const Article2 = () => {
       <p>
         Pour comprendre les bases de ces deux technos j'ai,dans un premier
         temps, été regarder leurs documentations. Après, avoir compris dans les
-        grandes lignes le but de ces deux technologies je me suis lancé dans
+        grandes lignes le but de ces deux technologies je me suis lancé dans un
         (mini-projet) afin de manipuler.
       </p>
       <p>

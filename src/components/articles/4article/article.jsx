@@ -74,7 +74,7 @@ const Article1 = () => {
       <img src={FormDemandeEch} alt="" />
       <p>
         Cette mission m'a permi de me plonger dans un projet assez complet déjà
-        existant.
+        existant. 
       </p>
       <section>
         <span>Le 27/07/2024</span>

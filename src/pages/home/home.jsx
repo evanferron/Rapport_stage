@@ -10,6 +10,7 @@ import cheese from "./cheese.png";
 import path1 from "./1path.png";
 import path2 from "./2path.png";
 import path3 from "./3path.png";
+import { Link } from "react-router-dom";
 import "./home.scss";
 
 const Home = () => {
@@ -20,23 +21,50 @@ const Home = () => {
         page={"home"}
         title={"Bienvenue"}
         buttonMessage={"Découvrez mon expérience à Eurial"}
+        buttonTarget={"main-home-section"}
       ></Header>
       <section id="main-home-section">
         <h2>Laissez-moi vous guider !</h2>
         <section id="link-container">
           <img src={cow} alt="cow logo" id="cow" />
-          <div id="first-bulle">
+          <Link
+            id="first-bulle"
+            to={"entreprise"}
+            className="bulle"
+            onClick={() => window.scrollTo(0, 0)}
+          >
             <p>Commencez par découvrir Eurial et son histoire.</p>
-          </div>
+          </Link>
           <img src={path1} alt="first path" id="first-path" />
-          <div id="second-bulle"></div>
+          <Link
+            id="second-bulle"
+            to={"articles"}
+            className="bulle"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <p>Plongez dans mon quotidien à travers des articles.</p>
+          </Link>
           <img src={truck} alt="truck logo" id="truck" />
           <img src={path2} alt="second path" id="second-path" />
-          <img src={factory} alt="factory logo" id="factory"/>
-          <div id="third-bulle"></div>
-          <img src={path3} alt="third path" />
-          <div id="fourth-bulle"></div>
-          <img src={cheese} alt="cheese logo" />
+          <img src={factory} alt="factory logo" id="factory" />
+          <Link
+            id="third-bulle"
+            to={"about"}
+            className="bulle"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <p>Aprenez en plus sur moi.</p>
+          </Link>
+          <img src={path3} alt="third path" id="third-path" />
+          <Link
+            id="fourth-bulle"
+            to={"contact"}
+            className="bulle"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <p>Si vous voulez me contacter c'est juste ici !</p>
+          </Link>
+          <img src={cheese} alt="cheese logo" id="cheese" />
         </section>
         <img id="wave-main-bottom" src={wave}></img>
       </section>
