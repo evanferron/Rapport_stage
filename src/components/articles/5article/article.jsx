@@ -9,13 +9,25 @@ const Article1 = () => {
       <img src={LogoEurial} alt="logo eurial" id="logo-eurial" />
       <h2>5. Bilan</h2>
       <p>
-        Avant de conclure, je vais rapidement vous parler de des choses que je
-        n'ai pas pus dire dans les articles précédents.
+        Avant de conclure, je souhaite aborder certains aspects que je n'ai pas
+        mentionnés dans les articles précédents.
       </p>
       <p>
         Au-delà des compétences techniques que j'ai apprise et que je vous ai
-        présenté précédemment, j'ai pu découvrir comment fonctionne une équipe,
-        comment un projet était imaginé et approché ou encore 
+        décrites, ce stage m'a également permis de découvrir le fonctionnement
+        d'une équipe, la manière dont un projet est conçu et géré, ainsi que la
+        vie quotidienne en entreprise en tant que collègue.
+      </p>
+      <p>
+        Ce stage m'a permi de m'améliorer aussi bien techniquement que
+        professionellement et même au-delà des choses que cela m'a apporté j'en
+        garderais un excellent souvenir. Ces apprentissages seront précieux pour
+        la suite de mon parcours, et je suis reconnaissant pour cette expérience
+        enrichissante.
+      </p>
+      <p id="end-message">
+        Je tiens à remercier chaleureusement l'équipe de transformation
+        numérique qui m'a accueilli et accompagné tout au long de ce stage.
       </p>
       <section>
         <span>Le 8/08/2024</span>

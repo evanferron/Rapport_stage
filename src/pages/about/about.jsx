@@ -97,12 +97,13 @@ const About = () => {
             </p>
           </section>
           <section className="content-about-right">
-            <h2>4. Mes projets</h2>
+            <h2>4. Mes compétences techniques</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,
-              nemo maxime officia vel rem nostrum. Quae, suscipit quibusdam.
-              Amet saepe pariatur totam sed temporibus atque similique
-              accusantium nostrum eum facilis?
+              En tant que développeur, mes languages de prédilection sont
+              JavaScript et JAVA. J'ai de nombreuse fois créé des applications
+              web à l'aide de React.JS et Express.JS. J'aspire à devenir un
+              développeur fullstack donc j'ai également des connaissances en
+              réseau.
             </p>
           </section>
         </section>

@@ -14,7 +14,7 @@ const Article1 = () => {
         permis de rencontrer l'équipe que j'allais intégrer pendant ces 6
         semaines de stage.
       </p>
-      <img src={Organnigrame} alt="" id="organnigrame"/>
+      <img src={Organnigrame} alt="" id="organnigrame" />
       <p>
         Après avoir rencontrer l'équipe je me suis familiarisé avec le lieu de
         travail:
@@ -23,7 +23,7 @@ const Article1 = () => {
         <li>Grand open space</li>
         <li>De nombreuse salles de réunions</li>
       </ul>
-      <p>J'ai également pus participer à certaines réunion d'équipe.</p>
+      <p>J'ai également pu participer à certaines réunions d'équipes.</p>
       <section>
         <span>Le 22/06/2024</span>
         <span>1/5</span>

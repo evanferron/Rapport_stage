@@ -23,13 +23,13 @@ const Article3 = () => {
         essentiellement manipuler Power automate dans cette mission.
       </p>
       <p>
-        Sharepoint propose un system de stockage partagé avec toute personne
-        ayant accès à ce Sharepoint. Ce system de partage possède la
-        fonctionnalité de stockage des versions précédentes. Si cette option est
-        désactivée, un fichier n'est stocké que dans son état actuel. Si cette
-        option est activée, elle offre la possibilité de stocké un nombre de
-        versions définissable par l'administrateur ; l'inconvénient est que ce
-        nombre ne peut pas être défini en dessous de 100.
+        Sharepoint (=cloud Microsoft) propose un system de stockage partagé avec
+        toute personne ayant accès à ce Sharepoint. Ce system de partage possède
+        la fonctionnalité de stockage des versions précédentes. Si cette option
+        est désactivée, un fichier n'est stocké que dans son état actuel. Si
+        cette option est activée, elle offre la possibilité de stocké un nombre
+        de versions définissable par l'administrateur ; l'inconvénient est que
+        ce nombre ne peut pas être défini en dessous de 100.
       </p>
       <p>
         Si on décide d'activer cette option pour une meilleure sécurité et

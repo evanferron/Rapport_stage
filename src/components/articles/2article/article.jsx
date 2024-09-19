@@ -21,9 +21,9 @@ const Article2 = () => {
         <img src={LogoPowerAutomate} alt="logo eurial" id="logo-eurial" />
       </div>
       <p>
-        Pour comprendre les bases de ces deux technos j'ai,dans un premier
-        temps, été regarder leurs documentations. Après, avoir compris dans les
-        grandes lignes le but de ces deux technologies je me suis lancé dans un
+        Pour comprendre les bases de ces deux technos j'ai dans un premier temps
+        été regarder leurs documentations. Après, avoir compris dans les grandes
+        lignes le but de ces deux technologies je me suis lancé dans un
         (mini-projet) afin de manipuler.
       </p>
       <p>

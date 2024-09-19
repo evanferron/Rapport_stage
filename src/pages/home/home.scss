@@ -4,7 +4,7 @@
     background-color: $grey;
     width: 100vw;
     display: grid;
-    grid-template-rows: 7rem 1fr 7rem 7rem;
+    grid-template-rows: 10rem 1fr 7rem 7rem;
 
     #wave-main-bottom{
         grid-row: 4;
@@ -12,6 +12,11 @@
     
     h2{
         text-align: center;
+        font-family: 'Asap';
+        font-weight: 400;
+        color: $indigo;
+        font-size: 40px;
+        align-self: center;
     }
 
     #link-container{
