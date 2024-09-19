@@ -6,9 +6,46 @@ import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
 import email from "../../assets/email.png";
 import wave from "../../wave_bottom.svg";
+import emailjs from "emailjs-com";
+import { useState } from "react";
+import LoadingIcon from "../../components/loadingIcon/loadingIcon";
 
 const Contact = () => {
-  const formHandler = (e) => {};
+  const [isFormLoading, setisFormLoading] = useState(false);
+  const formHandler = (e) => {
+    e.preventDefault(); // Empêcher le rechargement de la page
+    setisFormLoading(true);
+    // Validation basique
+    const emailInput = document.getElementById("email").value;
+    const objectInput = document.getElementById("object").value;
+    const messageInput = document.getElementById("message").value;
+
+    if (!emailInput || !objectInput || !messageInput) {
+      alert("Veuillez remplir tous les champs.");
+      return;
+    }
+
+    // Si vous utilisez EmailJS pour envoyer le formulaire
+    emailjs
+      .sendForm(
+        "service_h8yj62l",
+        "template_22k2aw4",
+        e.target,
+        "2gEgpgjiH9ivsC7vD"
+      )
+      .then(
+        (res) => {
+          alert("Message envoyé avec succès !");
+          // Réinitialiser le formulaire après l'envoi
+          e.target.reset();
+        },
+        (error) => {
+          alert("Erreur lors de l'envoi, veuillez réessayer.");
+          console.error("Erreur EmailJS :", error);
+        }
+      );
+    isFormLoading(false);
+  };
   const copyToClipBoard = (text) => {
     navigator.clipboard.writeText(text);
     document.getElementById("temp-message-hide").id = "temp-message";
@@ -60,15 +97,15 @@ const Contact = () => {
             <p id="temp-message-hide">Email copié dans le presse papier</p>
           </div>
           <div id="right-container">
-            <form>
+            <form onSubmit={formHandler}>
               <fieldset>
                 <legend>Formulaire de Contact</legend>
                 <div className="input-container">
-                  <label htmlFor="email-input">Email :</label>
+                  <label htmlFor="email">Email :</label>
                   <input
-                    type="text"
+                    type="email"
                     name="email"
-                    id="email-input"
+                    id="email"
                     placeholder="nom.prenom@gmail.com"
                   />
                 </div>
@@ -82,14 +119,19 @@ const Contact = () => {
                   />
                 </div>
                 <div id="message-container">
-                  <label htmlFor="message-input">Message :</label>
+                  <label htmlFor="message">Message :</label>
                   <textarea
                     name="message"
-                    id="message-input"
+                    id="message"
                     placeholder="Bonjour, ..."
                   ></textarea>
                 </div>
-                <button onClick={(e) => formHandler(e)}>Envoyer</button>
+                {/* {isFormLoading ? (
+                  <LoadingIcon></LoadingIcon>
+                ) : (
+                  <button type="submit">Envoyer</button>
+                )} */}
+                <button type="submit">Envoyer</button>
               </fieldset>
             </form>
           </div>
