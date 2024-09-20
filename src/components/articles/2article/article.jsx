@@ -24,18 +24,18 @@ const Article2 = () => {
         Pour comprendre les bases de ces deux technos j'ai dans un premier temps
         été regarder leurs documentations. Après, avoir compris dans les grandes
         lignes le but de ces deux technologies je me suis lancé dans un
-        (mini-projet) afin de manipuler.
+        (mini-projet) afin de les manipuler.
       </p>
       <p>
         Power app : C'est une plateforme de développement d'application créé par
         Microsoft. Cette technologie permet la création d'application en
-        low-code/no-code: system du glisser déposer en oublier l'aspect langage
+        low-code/no-code: system du glisser déposer en oubliant l'aspect langage
         de programmation.
       </p>
       <p>
         Power automate : Plateforme permettant de créer des flux de travail
-        automatisé : programme se déclenchant en fonction d'un événement choisi
-        (arrivé d'un email, création d'un fichier,...). Cette plateforme adopte
+        automatisés : programme se déclenchant en fonction d'un événement choisi
+        (arrivée d'un email, création d'un fichier,...). Cette plateforme adopte
         également le principe du low-code/no-code.
       </p>
       <p>
@@ -46,7 +46,7 @@ const Article2 = () => {
         <img src={LoginImage} alt="login" id="login-image" />
         <img src={ComposantImage} alt="composant" id="composant-image" />
         <p>
-          PowerApp m'a également permi d'apprendre un nouveau langage : Le
+          PowerApp m'a également permis d'apprendre un nouveau langage : Le
           PowerFX.
         </p>
         <p>
@@ -57,15 +57,15 @@ const Article2 = () => {
         <img src={ScriptButton} alt="script button" id="script-button-image" />
       </div>
       <p>
-        J'ai également manipuler Power Automate en liant un flux (script Power
-        Automate) à cette application. Ce flux me permetais de crypter le mot de
+        J'ai également manipulé Power Automate en liant un flux (script Power
+        Automate) à cette application. Ce flux me permetait de crypter le mot de
         passe de l'utilisateur.
       </p>
       <p>
         Je me suis concentré sur l'apprentissage des technologies pendant
-        environ 8 jours. Ce min-projet m'a permis de comprendre dans les grandes
-        lignes PowerAPPs et Power Automate. Je me suis également familiarisé
-        avec l'interface de la Power Plateform.
+        environ 8 jours. Ce mini-projet m'a permis de comprendre dans les
+        grandes lignes PowerAPPs et Power Automate. Je me suis également
+        familiarisé avec l'interface de la Power Plateform.
       </p>
       <section>
         <span>Le 23/06/2024</span>

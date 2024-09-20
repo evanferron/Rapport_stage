@@ -24,20 +24,20 @@ const Article3 = () => {
       </p>
       <p>
         Sharepoint (=cloud Microsoft) propose un system de stockage partagé avec
-        toute personne ayant accès à ce Sharepoint. Ce system de partage possède
-        la fonctionnalité de stockage des versions précédentes. Si cette option
-        est désactivée, un fichier n'est stocké que dans son état actuel. Si
-        cette option est activée, elle offre la possibilité de stocké un nombre
-        de versions définissable par l'administrateur ; l'inconvénient est que
-        ce nombre ne peut pas être défini en dessous de 100.
+        toute personne ayant accès à ce Sharepoint. Ce système de partage
+        possède la fonctionnalité de stockage des versions précédentes. Si cette
+        option est désactivée, un fichier n'est stocker que dans son état
+        actuel. Si cette option est activée, elle offre la possibilité de stocké
+        un nombre de versions définissable par l'administrateur ; l'inconvénient
+        est que ce nombre ne peut pas être défini en dessous de 100.
       </p>
       <p>
         Si on décide d'activer cette option pour une meilleure sécurité et
-        sauvegarde des données, l'espace disponible seras très vite réduis.
+        sauvegarde des données, l'espace disponible seras très vite réduit.
         Exemple : fichier.pptx de 100Mb de 100 versions prend une place de 10 G
       </p>
       <p>
-        La solution est de créer un algorithme qui analyse et nettoye de façon
+        La solution est de créer un algorithme qui analyse et nettoie de façon
         régulière l'ensemble des fichiers stockés sur le Sharepoint. Avec pour
         objectif de ne stocker que les 10 versions précédentes de chaque
         fichier. Solution créée à l'aide de Power Automate.
@@ -50,12 +50,12 @@ const Article3 = () => {
       <img src={DeleteReport} alt="" className="img-flux-suppression" />
 
       <p>
-        Ce projet m'a permi d'aborder de nombreuse fonctionnalités avancées de
+        Ce projet m'a permis d'aborder de nombreuses fonctionnalités avancées de
         Power Automate :{" "}
       </p>
       <ul>
         <li>Parcours de sites sharepoint</li>
-        <li>Analyse de donnée</li>
+        <li>Analyse de données</li>
         <li>Création/Suppression de fichier</li>
       </ul>
       <p>

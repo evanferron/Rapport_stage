@@ -10,13 +10,13 @@ const Article1 = () => {
       <img src={LogoEurial} alt="logo eurial" id="logo-eurial" />
       <h2>1. Découverte de l'Entreprise, du lieu de travail et de l'équipe</h2>
       <p>
-        Mon aventure au sein d'Eurial débute le 13 juin, ces premiers jours mon
-        permis de rencontrer l'équipe que j'allais intégrer pendant ces 6
+        Mon aventure au sein d'Eurial débute le 13 juin, ces premiers jours
+        m'ont permis de rencontrer l'équipe que j'allais intégrer pendant ces 6
         semaines de stage.
       </p>
       <img src={Organnigrame} alt="" id="organnigrame" />
       <p>
-        Après avoir rencontrer l'équipe je me suis familiarisé avec le lieu de
+        Après avoir rencontré l'équipe je me suis familiarisé avec le lieu de
         travail:
       </p>
       <ul>

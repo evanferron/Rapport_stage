@@ -72,16 +72,16 @@ const About = () => {
           <section className="content-about-left">
             <h2>1. Qui je suis ?</h2>
             <p>
-              Je m'appelle Evan Ferron et j'ai 20 ans et je suis passionné
+              Je m'appelle Evan Ferron et j'ai 20 ans, je suis passionné
               d'informatique depuis maintenant quelques années. En dehors des
-              études j'aime le sport, les jeux-vidéos et les voyages.
+              études, j'aime le sport, les jeux-vidéos et les voyages.
             </p>
           </section>
           <section className="content-about-right">
             <h2>2. Quel est mon parcours ?</h2>
             <p>
-              J'ai obtenue mon baccalauréat avec mention au lycée saint-michel à
-              Chateau-Gontier(53). Je suis actuellement sur ma troisième années
+              J'ai obtenu mon baccalauréat avec mention au Lycée Saint-Michel à
+              Chateau-Gontier(53). Je suis actuellement sur ma troisième année
               en étude d'informatique (développement) à Ynov Nantes.
             </p>
           </section>
@@ -99,8 +99,8 @@ const About = () => {
           <section className="content-about-right">
             <h2>4. Mes compétences techniques</h2>
             <p>
-              En tant que développeur, mes languages de prédilection sont
-              JavaScript et JAVA. J'ai de nombreuse fois créé des applications
+              En tant que développeur, mes langages de prédilection sont
+              JavaScript et JAVA. J'ai de nombreuses fois créé des applications
               web à l'aide de React.JS et Express.JS. J'aspire à devenir un
               développeur fullstack donc j'ai également des connaissances en
               réseau.

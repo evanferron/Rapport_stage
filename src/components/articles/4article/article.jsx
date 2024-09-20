@@ -18,7 +18,7 @@ const Article1 = () => {
       <h3>.Flux de réception de litrage</h3>
       <p>
         Eurial s'occupe de la transformation du lait mais également de la
-        récupération et du transport de celui-ci. Pour avoir un suivis sur le
+        récupération et du transport de celui-ci. Pour avoir un suivi sur le
         stockage de lait il est nécessaire de récupérer les comptes rendu de
         livraison des transports aux usines de fabrications. C'est pour cela
         qu'un flux(un programme) a été développé afin de récupérer ces comptes
@@ -33,12 +33,12 @@ const Article1 = () => {
         Le problème de cette solution était que les informations renseignés dans
         le mail était insuffisante pour régler le problème à la main: Il
         manquait le rendu, le lien direct de l'exécution du flux et quelques
-        autres informations complémentaires. Egalement, le status de l'exécution
-        du flux ne changeais pas si celui-ci ne se déroulais pas bien.
+        autres informations complémentaires. Egalement, le statu de l'exécution
+        du flux ne changeais pas si celui-ci ne se déroulait pas bien.
       </p>
       <p>
         Ma mission était donc d'arriver à renseigner les informations manquantes
-        et de changer le status d'exécution du flux losrqu'il est en erreur.
+        et de changer le statut d'exécution du flux losrqu'il est en erreur.
       </p>
       <img
         src={ReceptionLitrage}
@@ -51,30 +51,30 @@ const Article1 = () => {
       </p>
       <h3>.Projet échantillon</h3>
       <p>
-        Ce projet permet aux assistantes commercials d'Eurial de faire des
+        Ce projet permet aux assistantes commerciales d'Eurial de faire des
         demandes d'échantillon aux laboratoires qui préparent les produits. Il
-        fonctionne à partir d'un system de formulaire et d'email et à été créer
+        fonctionne à partir d'un système de formulaire et d'email et à été créé
         par le stagiaire précédent Matias BELLAUD.
       </p>
       <p>
-        Les assistantes commercials ont demandé certains ajouts/modifications :
+        Les assistantes commerciales ont demandé certains ajouts/modifications :
       </p>
       <ul>
-        <li>Un system de pièces jointes dans le formulaire de demande</li>
+        <li>Un système de pièces jointes dans le formulaire de demande</li>
         <li>
-          Ajout d'information dans le corp des mails envoyés automatiquement
+          Ajout d'information dans le corps des mails envoyés automatiquement
         </li>
         <li>Modifier la destination de ces emails</li>
       </ul>
       <p>
-        J'ai commencé cette mission en ajoutant le system de pièces jointes au
+        J'ai commencé cette mission en ajoutant le système de pièces jointes au
         formulaire de demande :
       </p>
       <p>(Formulaire à été créé à l'aide de Power App)</p>
       <img src={FormDemandeEch} alt="" />
       <p>
-        Cette mission m'a permi de me plonger dans un projet assez complet déjà
-        existant. 
+        Cette mission m'a permis de me plonger dans un projet assez complet déjà
+        existant.
       </p>
       <section>
         <span>Le 27/07/2024</span>

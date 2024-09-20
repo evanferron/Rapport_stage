@@ -63,11 +63,11 @@ const EntrepriseContent = () => {
     <section id="tab-content">
       <h2>Comment est l'environnement de travail ?</h2>
       <p>
-        J'ai effectué mon stage au siège d'Eurial : un batiment est relativement
-        neuf et donc assez confortable. Au sein du batiment, le lieu de travail
-        des différents corps informatiques est un grand open space pouvant
-        accueillir environ 60 employés. L'open space contient également de
-        multiple salles de réunions.
+        J'ai effectué mon stage au siège d'Eurial : le batiment est relativement
+        neuf(2020) et donc assez confortable. Au sein du batiment, le lieu de
+        travail des différents corps informatiques est un grand open space
+        pouvant accueillir environ 60 employés. L'open space contient également
+        de multiple salles de réunions.
       </p>
       <img src={Siege} alt="" id="siege-img" />
     </section>
@@ -109,7 +109,7 @@ const EntrepriseContent = () => {
             setCurrentTab(4);
           }}
         >
-          <p>L'Environment </p>
+          <p>L'Environnement </p>
           <p className="question-mark">?</p>
         </button>
       </span>
