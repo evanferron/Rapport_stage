@@ -102,8 +102,7 @@ const About = () => {
               En tant que développeur, mes langages de prédilection sont
               JavaScript et JAVA. J'ai de nombreuses fois créé des applications
               web à l'aide de React.JS et Express.JS. J'aspire à devenir un
-              développeur fullstack donc j'ai également des connaissances en
-              réseau.
+              développeur fullstack, j'ai également des connaissances en réseau.
             </p>
           </section>
         </section>

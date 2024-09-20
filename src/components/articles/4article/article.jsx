@@ -33,12 +33,12 @@ const Article1 = () => {
         Le problème de cette solution était que les informations renseignés dans
         le mail était insuffisante pour régler le problème à la main: Il
         manquait le rendu, le lien direct de l'exécution du flux et quelques
-        autres informations complémentaires. Egalement, le statu de l'exécution
+        autres informations complémentaires. Egalement, le statut de l'exécution
         du flux ne changeais pas si celui-ci ne se déroulait pas bien.
       </p>
       <p>
         Ma mission était donc d'arriver à renseigner les informations manquantes
-        et de changer le statut d'exécution du flux losrqu'il est en erreur.
+        et de changer le statut d'exécution du flux lorsqu'il est en erreur.
       </p>
       <img
         src={ReceptionLitrage}
