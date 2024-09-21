@@ -20,7 +20,7 @@ const Home = () => {
       <Header
         page={"home"}
         title={"Bienvenue"}
-        buttonMessage={"Découvrez mon expérience à Eurial"}
+        buttonMessage={"Découvrez mon expérience chez Eurial"}
         buttonTarget={"main-home-section"}
       ></Header>
       <section id="main-home-section">
@@ -53,7 +53,7 @@ const Home = () => {
             className="bulle"
             onClick={() => window.scrollTo(0, 0)}
           >
-            <p>Aprenez en plus sur moi.</p>
+            <p>Apprenez en plus sur moi.</p>
           </Link>
           <img src={path3} alt="third path" id="third-path" />
           <Link
